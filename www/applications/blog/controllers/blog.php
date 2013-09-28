@@ -27,7 +27,7 @@ class Blog_Controller extends ZP_Load
 
 		if ($data) {
 			$vars["posts"] = $data;
-			$vars["view"]  = $this->view("posts", true);
+			$vars["view"] = $this->view("posts", true);
 
 			$this->render("content", $vars);
 		} else {
